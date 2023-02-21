@@ -54,7 +54,7 @@ export const useGenres = () => {
   const getGenres = async () => {
     try {
       const resp = await fetch(
-        `http://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.REACT_APP_MOVIEDB_API_KEY}`
+        `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.REACT_APP_MOVIEDB_API_KEY}`
       );
       const data = await resp.json();
       setData(data);
